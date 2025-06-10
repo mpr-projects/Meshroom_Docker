@@ -133,6 +133,10 @@ RUN git apply -C1 ../fix_importKnownPoses.patch
 COPY update_av_build_command.patch /build_directory/AliceVision
 RUN git apply -C1 ../update_av_build_command.patch
 
+# the link to Boost changed in January 2025
+COPY update_boost_link.patch /build_directory/AliceVision
+RUN git apply -C1 ../update_boost_link.patch
+
 WORKDIR /build_directory/AliceVision/build
 ARG njobs=1
 ARG CPU_ARCHITECTURE=auto
