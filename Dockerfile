@@ -176,7 +176,7 @@ FROM base AS download_av_data
 
 WORKDIR /AliceVisionData
 ADD https://gitlab.com/alicevision/trainedVocabularyTreeData/raw/master/vlfeat_K80L3.SIFT.tree .
-ADD https://gitlab.com/c40e186alicevision/SphereDetectionModel/-/raw/main/sphereDetection_Mask-RCNN.onnx .
+ADD https://gitlab.com/alicevision/SphereDetectionModel/-/raw/main/sphereDetection_Mask-RCNN.onnx .
 ADD https://gitlab.com/alicevision/semanticSegmentationModel/-/raw/main/fcn_resnet50.onnx .
 
 
